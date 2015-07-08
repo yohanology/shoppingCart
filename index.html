@@ -29,19 +29,34 @@
       <!-- Cart items list -->
       <div class="row">
         <div class="cart-item col-xs-12">
+          
+          <!-- Items list -->
           <div class="cart-item-name col-xs-4">
-            
+            <p>Salmon</p>
           </div>
           <div class="cart-item-price col-xs-4">
-            
+            <p>$60.00</p>
           </div>
-          <div class="cart-item-qty col-xs-2">
-            
+          <div class="cart-item-qty col-xs-3">
+            <p class="col-xs-2">QTY</p>
+            <input class="itemQty col-xs-7">
+            <button class="itemCancel col-xs-3">Cancel</button>
           </div>
-          <div class="cart-tiem-total col-xs-2">
-            
+          <div class="cart-item-total col-xs-1">
+            <p>$0.00</p>
           </div>
-          
+
+          <!-- Input items-->
+          <div class="create-item-name col-xs-4">
+            <input id="createItemName">
+          </div>
+          <div class="create-item-price col-xs-4">
+            <input id="createItemPrice">
+          </div>
+          <div class="create-item-button col-xs-1">
+            <button id="createItem">Create</button>
+          </div>
+
         </div>
       </div>
       
@@ -49,7 +64,7 @@
       <!-- Button calculate price -->
       <div class="row">
         <div class="cart-calc-total col-xs-3 col-xs-offset-9">
-          
+          <button id="calc-price" type="button" class="btn btn-success">Calculate Prices</button>
         </div>
       </div>
       
@@ -57,7 +72,8 @@
       <!-- Total -->
       <div class="row">
         <div class="cart-total col-xs-4">
-          <h2>Total Price:</h2>
+          <h1>Total Price:</h1>
+          <h1>$0.00</h1>
         </div>
       </div>  
     

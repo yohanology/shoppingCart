@@ -10,7 +10,12 @@ $(document).ready(function(){
 	});
 
 
+	//Cancel item button
 
+	$(document).on('click', '.itemCancel', function(){
+		var itemRow = $(this).parent().parent();
+		itemRow.remove();
+	});
 
 
 
